@@ -1,6 +1,6 @@
 let items = document.querySelectorAll(".slider .item");
-let next = document.getElementById("next"); // Corregido: Cambiado "querySelectorById" a "getElementById"
-let prev = document.getElementById("prev"); // Corregido: Cambiado "querySelectorById" a "getElementById"
+let next = document.getElementById("next");
+let prev = document.getElementById("prev"); 
 
 let active = 3;
 
@@ -12,7 +12,7 @@ function loadShow() {
   items[active].style.opacity = 1;
 
   for (let i = active + 1; i < items.length; i++) {
-    // Corregido: Cambiado "var" a "let" en el bucle
+
     stt++;
     items[i].style.transform = `translateX(${120 * stt}px) scale(${
       1 - 0.2 * stt
@@ -25,7 +25,7 @@ function loadShow() {
   stt = 0;
 
   for (let i = active - 1; i >= 0; i--) {
-    // Corregido: Cambiado "var" a "let" en el bucle
+
     stt++;
     items[i].style.transform = `translateX(${-120 * stt}px) scale(${
       1 - 0.2 * stt

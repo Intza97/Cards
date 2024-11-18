@@ -91,7 +91,7 @@ body {
   border-radius: 0;
 }
 .container .cards .overlay::before {
-  content: "Read";
+  content: "Leer";
   position: absolute;
   top: 0;
   left: 0;
